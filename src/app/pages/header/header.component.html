@@ -1,0 +1,20 @@
+<header id="header" class="header d-flex align-items-center fixed-top">
+  <link rel="icon" type="image/x-icon" href="/public/favicon.ico">
+  <div class="container-fluid container-xl position-relative d-flex align-items-center">
+    <a href="/" class="d-flex align-items-center me-auto header-icon">
+      <img src="allianz.png" alt="" width="100" height="100">
+    </a>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a [routerLink]="'/'" [fragment]="'home'" class="active">Home</a></li>
+        <li><a [routerLink]="'/'" [fragment]="'about'">About</a></li>
+        <li><a [routerLink]="'/'" [fragment]="'product'">Product</a></li>
+        <li><a [routerLink]="'/'" [fragment]="'contact'">Contact</a></li>
+      </ul>
+      <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+    </nav>
+
+    <a class="cta-btn" href="index.html#about">Register</a>
+  </div>
+</header>
