@@ -65,7 +65,12 @@ body {
   color: var(--default-color);
   background-color: var(--background-color);
   font-family: var(--default-font);
+  padding: 0;
 }
+
+/* body.modal-open {
+  padding-right: 0 !important;
+} */
 
 a {
   color: var(--accent-color);
@@ -223,12 +228,12 @@ h6 {
 # Global Header
 --------------------------------------------------------------*/
 .header {
-  --background-color: rgba(0, 0, 0, 0.7);
+  --background-color: rgba(0, 0, 0);
   --default-color: #ffffff;
   --heading-color: #ffffff;
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 20px 0;
+  padding: 20px 200px;
   transition: all 0.5s;
   z-index: 997;
 }

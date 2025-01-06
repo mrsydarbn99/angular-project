@@ -1,4 +1,4 @@
-import { NgClass, NgFor, NgIf } from '@angular/common';
+import { NgClass, NgFor, NgIf, NgStyle } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink, RouterOutlet } from '@angular/router';
 
@@ -6,7 +6,7 @@ import { ActivatedRoute, RouterLink, RouterOutlet } from '@angular/router';
   selector: 'app-product-detail',
   templateUrl: './product-detail.component.html',
   styleUrls: ['./product-detail.component.css'],
-  imports: [RouterLink, NgClass, NgIf, NgFor, RouterOutlet],
+  imports: [RouterLink, NgClass, NgIf, NgFor, RouterOutlet, NgStyle],
 })
 export class ProductDetailComponent implements OnInit {
   productId: string | null = null;
@@ -20,6 +20,7 @@ export class ProductDetailComponent implements OnInit {
         {
           id: '1',
           title: 'Allianz Diabetic Essential',
+          img: 'picture/product/pic1.jpeg',
           info: 'Diabetes should not stop you from getting the medical protection that you need. With Allianz Diabetic Essential, we believe that you deserve a second chance to be protected. As an encouragement Allianz is rewarding you with annual premium discounts should you maintain or improve your health.',
           description: 'With the higher risk of being diagnosed with major medical conditions, it is important to have a medical plan in place to help cover the cost of hospitalisation and surgery if you succumb to an illness as a result of diabetes. As a diabetic, now you can get medical coverage you deserve with Allianz.',
           ul: [
@@ -38,6 +39,7 @@ export class ProductDetailComponent implements OnInit {
         {
           id: '2',
           title: 'MediAdvantage',
+          img: 'picture/product/mediadvantage.jpeg',
           info: 'Access overseas medical expertise for your healthcare needs.',
           description: 'Sometimes the best treatment may be further away. Wouldn’t it be great if you had more medical options to choose from and potentially seek medical treatment overseas? Now you can with MediAdvantage. MediAdvantage provides overseas medical protection for Cancer, Coronary Artery Bypass Surgery, Heart Valve Surgery, Live-Donor Organ and Bone Marrow Transplant, as well as Intracranial and Specific Spinal Cord Surgery.',
           ul: [
@@ -57,6 +59,7 @@ export class ProductDetailComponent implements OnInit {
         {
           id: '3',
           title: 'HealthInsured',
+          img: 'picture/product/diabeticessential.jpeg',
           info: 'Medical coverage designed to give you peace of mind.',
           description: 'There is no greater wealth in this world than peace of mind. HealthInsured is a plan that cares for your needs and protects you and your family with the most comprehensive medical coverage.',
           ul: [
@@ -89,6 +92,7 @@ export class ProductDetailComponent implements OnInit {
         {
           id: '1',
           title: 'Allianz EverLink Plus',
+          img: 'picture/product/pic2.jpg',
           info: 'Secure your family`s path towards stability & hope.',
           description: 'This regular premium investment-linked insurance plan offers robust protection with high coverage for Death or Total and Permanent Disability (TPD)* at a reasonable price. And, with flexible coverage terms tailored to your family`s needs, you can protect your loved ones without compromise.',
           ul: [
@@ -109,6 +113,7 @@ export class ProductDetailComponent implements OnInit {
         {
           id: '2',
           title: 'Allianz EverLink Signature',
+          img: 'picture/product/diabticsignature.jpeg',
           info: 'Protect the ones you love the most.',
           description: 'Secure the future for your loved ones today. This high coverage regular premium investment-linked insurance plan is an auto renewable plan that covers Death or Total and Permanent Disability (TPD)*, with a short commitment period, providing a reliable financial safety net that will protect and provide for the ones you love the most.',
           ul: [
@@ -129,6 +134,7 @@ export class ProductDetailComponent implements OnInit {
         {
           id: '3',
           title: 'Allianz Kasih4All',
+          img: 'picture/product/kasih4all.jpeg',
           info: 'Affordable coverage for those who matter most',
           description: 'Introducing our new and affordable life protection insurance that caters to you, designed to safeguard your loved ones financially in the event of unexpected occurrences in the future. This product is part of the Rahmah Insurance Initiative by the Government of Malaysia and Allianz Malaysia, aimed at providing enhanced and affordable protection to all Malaysians. ',
           ul: [
@@ -164,6 +170,7 @@ export class ProductDetailComponent implements OnInit {
         {
           id: '1',
           title: 'HealthCover Plus',
+          img: 'picture/product/pic3.jpeg',
           info: 'Supporting your journey to recovery',
           description: 'Having a critical illness can be tough for you and your family, have you done enough to protect you and your family during those trying times? HealthCover Plus is an Allianz PowerLink optional rider that provides a financial safety net for you and your family if you were diagnosed with a critical illness.',
           ul: [
@@ -181,6 +188,7 @@ export class ProductDetailComponent implements OnInit {
         {
           id: '2',
           title: 'Prime Care+',
+          img: 'picture/product/primecare.jpeg',
           info: 'Protecting the fragility of life',
           description: 'Life can be unpredictable, full of ups and down, being diagnosed with a critical illness can be tough for you and your family. Early treatment brings higher chances of recovery. Therefore, Prime Care+ is a unique critical illness plan that provides extensive coverage against critical illnesses from Early to Advanced stages. This plan helps you to seek early treatment before a covered critical illness worsens. With Prime Care+, you can be confident that you will have a financial safety net during those periods of uncertainty.',
           ul: [
@@ -201,6 +209,7 @@ export class ProductDetailComponent implements OnInit {
         {
           id: '3',
           title: 'PreciousCover and BabyCover',
+          img: 'picture/product/perciouscover.jpeg',
           info: 'Celebrate your joy with our best mother and baby coverage',
           description: 'Introducing PreciousCover and BabyCover, two specially designed plans that look into the well-being of both mother and child through a host of pre and post-natal coverage, and also child’s coverage.',
           ul: [
@@ -228,6 +237,7 @@ export class ProductDetailComponent implements OnInit {
         {
           id: '1',
           title: 'Allianz Shield Plus',
+          img: 'picture/product/pic4.jpg',
           info: 'Protect yourself from the unpredictable nature of life no matter where you are in the world with the Allianz Shield Plus insurance plan.',
           description: 'Accidents can happen to anyone when we least expect them. No one can deny that life is unpredictable and accidents do happen. The loss of income and the ever piling bills arising from serious accidental injuries can be extremely taxing. Such financial hardship could be burdensome for the loved ones in the event of a death. But you can be prepared for it by taking away the "what-ifs" with Allianz Shield Plus - a 24/7 worldwide personal insurance protection against accidents that will ensure you peace of mind.',
           ul: [
@@ -280,6 +290,7 @@ export class ProductDetailComponent implements OnInit {
         {
           id: '2',
           title: 'Personal Accident Insurance',
+          img: 'picture/product/personalaccident.jpeg',
           info: 'Life is unpredictable so protect yourself against various kinds of personal accidents',
           description: 'Allianz Personal Accident insurance provides compensation in the event of bodily injuries, disabilities or death caused by accidents.',
           ul: [
@@ -308,6 +319,7 @@ export class ProductDetailComponent implements OnInit {
         {
           id: '3',
           title: 'Special Occupation Personal Accident',
+          img: 'picture/product/specialoccupation.jpeg',
           info: 'The ideal personal accident coverage for those who work in risky environments',
           description: 'Special Occupation Personal Accident insurance is designed especially for people who are working in occupation groups which are normally excluded under the standard personal accident insurance, such as those working in the construction and manufacturing sectors, offshore platforms, etc. This insurance provides 24 hours protection in the event of injuries, disability or death solely caused by accidents.',
           ul: [
@@ -343,6 +355,7 @@ export class ProductDetailComponent implements OnInit {
         {
           id: '1',
           title: 'Prime Income',
+          img: 'picture/product/pic5.jpeg',
           info: 'Kick off to a lifetime of protection and financial security with a short commitment of 8 years only for a better and brighter future',
           description: 'Prime Income is designed to give you a stable stream of income while keeping you and your family safe. Furthermore, you only need to pay premiums for only 8 years to enjoy a coverage. Instead of worrying about the future, be certain of it now.',
           ul: [
@@ -361,6 +374,7 @@ export class ProductDetailComponent implements OnInit {
         {
           id: '2',
           title: 'Allianz ValueGuard & Allianz ValueGuard Plus',
+          img: 'picture/product/valueguard.png',
           info: 'Think ahead, guard & grow your wealth',
           description: 'At Allianz, we believe in playing the long game. Whether it’s investing​ your wealth for consistent returns, saving toward a comfortable retirement, or enjoying life with additional streams of income, ​ the Allianz ValueGuard and Allianz ValueGuard Plus provide you with unique benefits.',
           ul: [
@@ -382,12 +396,13 @@ export class ProductDetailComponent implements OnInit {
       ],
     },
     {
-      category: 'home',
+      category: 'home-insurance',
       categoryName: 'Home',
       categoryDetail: [
         {
           id: '1',
           title: 'Smart Home Cover',
+          img: 'picture/product/pic6.jpg',
           info: 'A new kind of home insurance that offers flexibility for your peace of mind.',
           description: 'Secure your home or rental property with Smart Home Cover, a comprehensive plan that offers five customisable components namely HouseOwner (Building), HouseHolder (Content), Mortgage Loan Installment Protection, HomeFix, and Landlord Insurance. With Smart Home Cover, you can rest easy knowing that your home is protected.',
           ul: [
@@ -437,6 +452,7 @@ export class ProductDetailComponent implements OnInit {
         {
           id: '1',
           title: 'Allianz Motor Comprehensive',
+          img: 'picture/product/pic7.jpeg',
           info: 'We have now enhanced this product under the umbrella of the Rahmah Insurance Initiative with additional benefits',
           description: 'Motor Comprehensive insurance covers your car against liabilities to other parties for death or bodily injuries, damages to other parties` properties, accidental or fire damages to your car and theft of your car. Now, under the umbrella of the Rahmah Insurance Initiative, you can enjoy extra benefits with no additional charges.',
           ul: [
@@ -496,6 +512,7 @@ export class ProductDetailComponent implements OnInit {
         {
           id: '2',
           title: 'Enjoy Great Benefits with Allianz Motorcycle Insurance!',
+          img: 'picture/product/motorcycleplus.png',
           info: 'Allianz Motorcycle Plus is now enhanced under the umbrella of the Rahmah Insurance Initiative with additional benefits for floods.',
           description: 'The newly upgraded Allianz Motorcycle Plus is enhanced to cover you, motorcycle, and is now further extended to the pillion rider too, at no extra cost. Now, under the umbrella of the Rahmah Insurance Initiative, you can enjoy complimentary flood relief benefit. Ride worry-free knowing you have protection against liabilities to other parties for death or bodily injuries, damages to other parties` properties, accidental or fire damages, and theft to your motorcycle.',
           ul: [],
@@ -531,6 +548,7 @@ export class ProductDetailComponent implements OnInit {
         {
           id: '1',
           title: 'Enhanced Road Warrior',
+          img: 'picture/product/pic8.jpg',
           info: '24-hour roadside assistance which offers a very comprehensive scope of protection',
           description: 'Enhanced Road Warrior is your best road partner and 24-hour roadside assistance which offers a very comprehensive scope of protection during a car breakdown or for when you or your passengers sustain personal injuries in the event of an accident.  Not only are you reassured of reliable 24-hour free unlimited towing distance and roadside assitance, you`ll get additional benefits such as free car replacement, compassionate cover and flood cover too.',
           ul: [
@@ -566,6 +584,7 @@ export class ProductDetailComponent implements OnInit {
         {
           id: '1',
           title: 'Allianz Travel Insurance',
+          img: 'picture/product/pic9.jpg',
           info: 'Secure your trip with Allianz Travel Insurance!',
           description: 'When you travel, you would want to have a worry-free holiday. Allianz travel insurance will protect you and your family during your holidays, overseas or domestic.',
           ul: [
@@ -623,6 +642,7 @@ export class ProductDetailComponent implements OnInit {
     | {
         id: string;
         title: string;
+        img: string;
         info: string;
         description: string;
         ul: string[];

@@ -2,3 +2,30 @@
   height: 50px;
   width: 50px;
 }
+button {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.modal-open .fixed-top {
+  padding-right: 0 !important;
+}
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 9999;
+  background-color: #25d366;
+  border-radius: 50%;
+  padding: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.whatsapp-icon img {
+  width: 50px;
+  height: 50px;
+}
+
+.whatsapp-icon:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}

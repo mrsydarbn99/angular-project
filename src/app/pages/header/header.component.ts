@@ -13,7 +13,6 @@ export class HeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.initMobileNavToggle();
-    this.initDropdownToggle();
     this.initScrollSpy();
   }
 
@@ -38,21 +37,6 @@ export class HeaderComponent implements OnInit {
           mobileNavToggle.classList.add('bi-list');
           mobileNavToggle.classList.remove('bi-x');
         }
-      });
-    });
-  }
-
-  /**
-   * Toggles dropdown menus
-   */
-  private initDropdownToggle(): void {
-    const dropdownToggles = document.querySelectorAll('.toggle-dropdown');
-
-    dropdownToggles.forEach(toggle => {
-      toggle.addEventListener('click', (event) => {
-        event.preventDefault();
-        const parent = toggle.parentElement!.parentElement as HTMLElement;
-        parent.classList.toggle('dropdown-active');
       });
     });
   }

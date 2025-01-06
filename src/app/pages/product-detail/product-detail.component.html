@@ -1,22 +1,23 @@
-<div class="page-title dark-background" data-aos="fade" style="background-image: url(picture/pic1.jpeg);" *ngIf="selectedProduct">
+<div *ngIf="selectedProduct" class="page-title dark-background" data-aos="fade" [ngStyle]="{'background-image': 'url(' + selectedProduct.img + ')'}">
   <div class="container position-relative">
     <h1>{{ getCategoryName(category) }}</h1>
     <nav class="breadcrumbs">
       <ol>
         <li><a [routerLink]="'/'">Home</a></li>
-        <li class="current">Product Details</li>
+        <li><a href="#product">Product</a></li>
+        <li class="current">{{ getCategoryName(category) }}</li>
       </ol>
     </nav>
   </div>
 </div>
 
-<section id="product-details" class="product-details" *ngIf="selectedProduct">
+
+<section id="product-details" class="product-details pb-5" *ngIf="selectedProduct">
   <div class="container">
     <div class="row gy-4">
-      <!-- Sidebar -->
       <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
         <div class="product-list">
-          <h4>Other Products</h4>
+          <h4>{{ getCategoryName(category) }}</h4>
           <a *ngFor="let product of getProductsByCategory(category)"
             [routerLink]="['/product-detail', category, product.id]"
             class="product-link"
@@ -29,9 +30,8 @@
         <p style="text-align: justify;">{{ selectedProduct.info }}</p>
       </div>
 
-      <!-- Main Content -->
       <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-        <img src="picture/pic1.jpeg" alt="" class="img-fluid product-img" />
+        <img [src]="selectedProduct.img" alt="" class="img-fluid product-img" />
         <h3>{{ selectedProduct.title }}</h3>
         <p style="text-align: justify;">{{ selectedProduct.description }}</p>
         <ul>
@@ -40,9 +40,9 @@
           </li>
         </ul>
         <div class="brochure-links">
-          <h4>Brochures:</h4>
+          <h4>Downlod:</h4>
           <a *ngFor="let brochureLink of selectedProduct.brochureLinks" [href]="brochureLink.link" target="_blank" class="brochure-link">
-            {{ brochureLink.title }}
+            <i class="bi bi-download"></i> {{ brochureLink.title }}
           </a>
         </div>
       </div>
