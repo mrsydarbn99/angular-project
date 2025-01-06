@@ -852,7 +852,7 @@ section,
 .section {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 60px 0;
+  /* padding: 60px 0; */
   scroll-margin-top: 90px;
   overflow: clip;
   padding-top: 110px;
@@ -1082,7 +1082,7 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Services Section
+# products Section
 --------------------------------------------------------------*/
 .product .img {
   border-radius: 8px;
@@ -1137,24 +1137,24 @@ section,
   margin-bottom: 0;
 }
 
-.product .service-item:hover .details h3 {
+.product .product-item:hover .details h3 {
   color: var(--accent-color);
 }
 
-.product .service-item:hover .details .icon {
+.product .product-item:hover .details .icon {
   background: var(--surface-color);
   border: 2px solid var(--accent-color);
 }
 
-.product .service-item:hover .details .icon i {
+.product .product-item:hover .details .icon i {
   color: var(--accent-color);
 }
 
-.product .service-item:hover .img img {
+.product .product-item:hover .img img {
   transform: scale(1.2);
 }
 
-.service-item .img img {
+.product-item .img img {
   width: 100%; /* Makes the image fill the container width */
   height: 300px; /* Set a fixed height for all images */
   object-fit: cover; /* Ensures images are cropped proportionally */
@@ -1289,43 +1289,43 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Services 2 Section
+# products 2 Section
 --------------------------------------------------------------*/
-.product-2 .service-item {
+.product-2 .product-item {
   background-color: var(--surface-color);
   padding: 30px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 85%);
   transition: 0.3s;
 }
 
-.product-2 .service-item .icon {
+.product-2 .product-item .icon {
   font-size: 36px;
   line-height: 0;
   margin-right: 30px;
   color: var(--accent-color);
 }
 
-.product-2 .service-item .title {
+.product-2 .product-item .title {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 20px;
 }
 
-.product-2 .service-item .title a {
+.product-2 .product-item .title a {
   color: var(--heading-color);
 }
 
-.product-2 .service-item .description {
+.product-2 .product-item .description {
   line-height: 24px;
   font-size: 14px;
   margin: 0;
 }
 
-.product-2 .service-item:hover {
+.product-2 .product-item:hover {
   border-color: var(--accent-color);
 }
 
-.product-2 .service-item:hover .title a {
+.product-2 .product-item:hover .title a {
   color: var(--accent-color);
 }
 
@@ -1783,16 +1783,16 @@ section,
 }
 
 /*--------------------------------------------------------------
-# Service Details Section
+# product Details Section
 --------------------------------------------------------------*/
-.service-details .product-list {
+.product-details .product-list {
   background-color: var(--surface-color);
   padding: 10px 30px;
   border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
   margin-bottom: 20px;
 }
 
-.service-details .product-list a {
+.product-details .product-list a {
   display: block;
   line-height: 1;
   padding: 8px 0 8px 15px;
@@ -1802,47 +1802,47 @@ section,
   transition: 0.3s;
 }
 
-.service-details .product-list a.active {
+.product-details .product-list a.active {
   color: var(--heading-color);
   font-weight: 700;
   border-color: var(--accent-color);
 }
 
-.service-details .product-list a:hover {
+.product-details .product-list a:hover {
   border-color: var(--accent-color);
 }
 
-.service-details .product-img {
+.product-details .product-img {
   margin-bottom: 20px;
 }
 
-.service-details h3 {
+.product-details h3 {
   font-size: 26px;
   font-weight: 700;
 }
 
-.service-details h4 {
+.product-details h4 {
   font-size: 20px;
   font-weight: 700;
 }
 
-.service-details p {
+.product-details p {
   font-size: 15px;
 }
 
-.service-details ul {
+.product-details ul {
   list-style: none;
   padding: 0;
   font-size: 15px;
 }
 
-.service-details ul li {
+.product-details ul li {
   padding: 5px 0;
   display: flex;
   align-items: center;
 }
 
-.service-details ul i {
+.product-details ul i {
   font-size: 20px;
   margin-right: 8px;
   color: var(--accent-color);

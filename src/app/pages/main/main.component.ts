@@ -28,7 +28,6 @@ export class MainComponent implements OnInit, AfterViewInit {
       const section = document.querySelector(window.location.hash);
       if (section) {
         setTimeout(() => {
-          // Cast the section to HTMLElement
           const sectionElement = section as HTMLElement;
           const scrollMarginTop = getComputedStyle(sectionElement).scrollMarginTop;
           window.scrollTo({

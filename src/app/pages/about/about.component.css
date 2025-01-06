@@ -6,3 +6,9 @@
 p{
   text-align: justify;
 }
+.position-relative img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 1rem;
+}

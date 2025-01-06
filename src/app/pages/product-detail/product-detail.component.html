@@ -1,4 +1,52 @@
-<div class="product-detail">
-  <h2>Product ID: {{ productId }}</h2>
-  <p>Details for product {{ productId }} will go here.</p>
+<div class="page-title dark-background" data-aos="fade" style="background-image: url(picture/pic1.jpeg);" *ngIf="selectedProduct">
+  <div class="container position-relative">
+    <h1>{{ getCategoryName(category) }}</h1>
+    <nav class="breadcrumbs">
+      <ol>
+        <li><a [routerLink]="'/'">Home</a></li>
+        <li class="current">Product Details</li>
+      </ol>
+    </nav>
+  </div>
 </div>
+
+<section id="product-details" class="product-details" *ngIf="selectedProduct">
+  <div class="container">
+    <div class="row gy-4">
+      <!-- Sidebar -->
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="product-list">
+          <h4>Other Products</h4>
+          <a *ngFor="let product of getProductsByCategory(category)"
+            [routerLink]="['/product-detail', category, product.id]"
+            class="product-link"
+            [ngClass]="{'active': product.id === productId}">
+            {{ product.title }}
+          </a>
+        </div>
+
+        <h4>Product Info</h4>
+        <p style="text-align: justify;">{{ selectedProduct.info }}</p>
+      </div>
+
+      <!-- Main Content -->
+      <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+        <img src="picture/pic1.jpeg" alt="" class="img-fluid product-img" />
+        <h3>{{ selectedProduct.title }}</h3>
+        <p style="text-align: justify;">{{ selectedProduct.description }}</p>
+        <ul>
+          <li *ngFor="let ul of selectedProduct.ul">
+            <i class="bi bi-check-circle"></i> <span>{{ ul }}</span>
+          </li>
+        </ul>
+        <div class="brochure-links">
+          <h4>Brochures:</h4>
+          <a *ngFor="let brochureLink of selectedProduct.brochureLinks" [href]="brochureLink.link" target="_blank" class="brochure-link">
+            {{ brochureLink.title }}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<router-outlet></router-outlet>

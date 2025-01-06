@@ -33,7 +33,7 @@ export const routes: Routes = [
     component:ContactComponent
   },
   {
-    path:'product-detail/:id',
+    path:'product-detail/:category/:id',
     component:ProductDetailComponent
   }
 ];
