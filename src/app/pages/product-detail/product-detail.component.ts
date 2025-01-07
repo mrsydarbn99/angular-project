@@ -113,7 +113,7 @@ export class ProductDetailComponent implements OnInit {
         {
           id: '2',
           title: 'Allianz EverLink Signature',
-          img: 'picture/product/diabticsignature.jpeg',
+          img: 'picture/product/diabeticessential.jpeg',
           info: 'Protect the ones you love the most.',
           description: 'Secure the future for your loved ones today. This high coverage regular premium investment-linked insurance plan is an auto renewable plan that covers Death or Total and Permanent Disability (TPD)*, with a short commitment period, providing a reliable financial safety net that will protect and provide for the ones you love the most.',
           ul: [
@@ -209,7 +209,7 @@ export class ProductDetailComponent implements OnInit {
         {
           id: '3',
           title: 'PreciousCover and BabyCover',
-          img: 'picture/product/perciouscover.jpeg',
+          img: 'picture/product/preciouscover.jpeg',
           info: 'Celebrate your joy with our best mother and baby coverage',
           description: 'Introducing PreciousCover and BabyCover, two specially designed plans that look into the well-being of both mother and child through a host of pre and post-natal coverage, and also child’s coverage.',
           ul: [
@@ -402,7 +402,7 @@ export class ProductDetailComponent implements OnInit {
         {
           id: '1',
           title: 'Smart Home Cover',
-          img: 'picture/product/pic6.jpg',
+          img: 'picture/product/pic8.jpg',
           info: 'A new kind of home insurance that offers flexibility for your peace of mind.',
           description: 'Secure your home or rental property with Smart Home Cover, a comprehensive plan that offers five customisable components namely HouseOwner (Building), HouseHolder (Content), Mortgage Loan Installment Protection, HomeFix, and Landlord Insurance. With Smart Home Cover, you can rest easy knowing that your home is protected.',
           ul: [
