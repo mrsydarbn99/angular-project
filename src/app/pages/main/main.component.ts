@@ -4,10 +4,11 @@ import { AboutComponent } from "../about/about.component";
 import { ProductComponent } from "../product/product.component";
 import { ContactComponent } from "../contact/contact.component";
 import { RegisterComponent } from "../register/register.component";
+import { ServicesComponent } from "../services/services.component";
 
 @Component({
   selector: 'app-main',
-  imports: [HomeComponent, AboutComponent, ProductComponent, ContactComponent, RegisterComponent],
+  imports: [HomeComponent, AboutComponent, ProductComponent, ContactComponent, RegisterComponent, ServicesComponent],
   templateUrl: './main.component.html',
   styleUrl: './main.component.css'
 })

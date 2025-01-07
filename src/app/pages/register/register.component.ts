@@ -10,6 +10,10 @@ import { ReactiveFormsModule, FormControl, FormGroup, Validators } from '@angula
 })
 export class RegisterComponent {
 
+  constructor(){
+
+  }
+
   clientForm: FormGroup = new FormGroup({
     name: new FormControl("", Validators.required),
     dob: new FormControl("", Validators.required),
@@ -19,6 +23,10 @@ export class RegisterComponent {
   })
 
   onSend(){
+    if(!this.clientForm.valid){
+      this.clientForm.markAllAsTouched();
+      return;
+    }
     const formValue = this.clientForm.value;
     console.log(formValue)
   }

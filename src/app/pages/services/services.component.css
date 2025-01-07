@@ -1,0 +1,47 @@
+.services {
+  font-family: 'Poppins', sans-serif;
+}
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  color: #007bff;
+}
+
+.card ul {
+  padding-left: 0;
+  margin-top: 1rem;
+}
+
+.card ul li {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.card ul li strong {
+  color: #6c757d;
+}
+
+/* Fancy Hover Effects for Cards */
+.card:hover .card-title {
+  color: #0056b3;
+}
+
+/* Responsive Margins */
+@media (max-width: 768px) {
+  .section-title h2 {
+    font-size: 2rem;
+  }
+
+  .card-title {
+    font-size: 1.3rem;
+  }
+}
